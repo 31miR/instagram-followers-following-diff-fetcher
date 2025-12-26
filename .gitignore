@@ -1,1 +1,6 @@
 .env
+pyvenv.cfg
+Lib/
+Include/
+Scripts/
+**/__pycache__/

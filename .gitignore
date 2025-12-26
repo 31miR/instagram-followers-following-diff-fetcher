@@ -4,3 +4,4 @@ Lib/
 Include/
 Scripts/
 **/__pycache__/
+result.txt

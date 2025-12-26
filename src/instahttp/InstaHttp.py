@@ -12,7 +12,7 @@ def fetch_follower_small_list(profile_id, max_id=None):
     return requests.get(request_link, cookies=cookies, headers=headers).json()
 
 def fetch_following_small_list(profile_id, max_id=None):
-    request_link = "https://www.instagram.com/api/v1/friendships/" + str(profile_id) + "/following/?count=12&search_surface=follow_list_page"
+    request_link = "https://www.instagram.com/api/v1/friendships/" + str(profile_id) + "/following/?count=12"
     if (max_id):
         request_link += "&max_id=" + max_id
     return requests.get(request_link, cookies=cookies, headers=headers).json()
